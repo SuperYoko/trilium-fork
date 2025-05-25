@@ -24,6 +24,7 @@ function SetupModel() {
     this.password = ko.observable();
 
     this.setupTypeSelected = () => !!this.setupType();
+    // in case user clicks on the button before selecting anything
 
     this.selectSetupType = () => {
         if (this.setupType() === 'new-document') {
